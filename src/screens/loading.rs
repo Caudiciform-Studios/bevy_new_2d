@@ -31,5 +31,5 @@ fn continue_to_title_screen(mut next_screen: ResMut<NextState<Screen>>) {
 }
 
 fn all_assets_loaded(resource_handles: Res<ResourceHandles>) -> bool {
-    resource_handles.done()
+    resource_handles.is_done()
 }

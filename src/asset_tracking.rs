@@ -48,7 +48,7 @@ pub struct ResourceHandles {
 }
 
 impl ResourceHandles {
-    pub fn done(&self) -> bool {
+    pub fn is_done(&self) -> bool {
         self.waiting.is_empty()
     }
 }

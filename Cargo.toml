@@ -6,7 +6,6 @@ license = "MIT OR Apache-2.0 OR CC0-1.0"
 
 [dependencies]
 bevy = { version = "0.15", features = ["wayland"] }
-bevy_common_assets = {version = "0.12", features=["ron"]}
 rand = "0.8"
 # Compile low-severity logs out of native builds for performance.
 log = { version = "0.4", features = [
@@ -19,6 +18,8 @@ tracing = { version = "0.1", features = [
     "release_max_level_warn",
 ] }
 serde = "1"
+ron = "0.8"
+thiserror = "2"
 
 [features]
 default = [
